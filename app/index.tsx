@@ -1,24 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native'
+import {  Text, View } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar'
+import { Link } from 'expo-router'
+
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>This is  react-native using expo.</Text>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text >This is  react-native using expo. Got it sure.</Text>
       <StatusBar style='auto' />
+      <Link href='/profile'>Go to Profile</Link>
     </View>
   )
 }
 
 export default App
-
-const styles=StyleSheet.create({
-    container:{
-      flex:1,
-      backgroundColor:'#fff',
-      justifyContent:'center',
-      alignItems:'center'
-  
-    }
-   })
